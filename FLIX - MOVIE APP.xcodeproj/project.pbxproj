@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0FBF65960DFF300DC4A9DBFE /* Pods_CodePathProjectOne_CodePathProjectOneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947D8A2ACF6BFD7C688D66E6 /* Pods_CodePathProjectOne_CodePathProjectOneUITests.framework */; };
 		A6B18AD628187623EBABD0F7 /* Pods_CodePathProjectOneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8170EB4B3809EA347532C11 /* Pods_CodePathProjectOneTests.framework */; };
+		C61F7EF0252E37060092E71E /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F7EEF252E37060092E71E /* MovieGridCell.swift */; };
 		C620463A251E85FD00CC5EFF /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6204639251E85FD00CC5EFF /* MovieViewController.swift */; };
 		C648D4E52527E53700532DE0 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648D4E42527E53700532DE0 /* MovieDetailsViewController.swift */; };
 		C6647BEC251D9F62004360EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6647BEB251D9F62004360EF /* AppDelegate.swift */; };
@@ -19,6 +20,8 @@
 		C6647BF8251D9F72004360EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6647BF6251D9F72004360EF /* LaunchScreen.storyboard */; };
 		C6647C03251D9F72004360EF /* CodePathProjectOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6647C02251D9F72004360EF /* CodePathProjectOneTests.swift */; };
 		C6647C0E251D9F72004360EF /* CodePathProjectOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6647C0D251D9F72004360EF /* CodePathProjectOneUITests.swift */; };
+		C67FF891252DB0D4000F9915 /* MovieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67FF890252DB0D4000F9915 /* MovieGridViewController.swift */; };
+		C6C8CB40252E477E009A611B /* SuperHerosDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C8CB3F252E477E009A611B /* SuperHerosDetailsViewController.swift */; };
 		C6F715AB251EAD4500DBD6FA /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F715AA251EAD4500DBD6FA /* MovieCell.swift */; };
 		F1FFD205F89A3F938B033D4E /* Pods_CodePathProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570B724B4063928587201169 /* Pods_CodePathProjectOne.framework */; };
 /* End PBXBuildFile section */
@@ -49,9 +52,10 @@
 		947D8A2ACF6BFD7C688D66E6 /* Pods_CodePathProjectOne_CodePathProjectOneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodePathProjectOne_CodePathProjectOneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0365BC32EA125E7EA24571C /* Pods-CodePathProjectOneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodePathProjectOneTests.debug.xcconfig"; path = "Target Support Files/Pods-CodePathProjectOneTests/Pods-CodePathProjectOneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8170EB4B3809EA347532C11 /* Pods_CodePathProjectOneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodePathProjectOneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C61F7EEF252E37060092E71E /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
 		C6204639251E85FD00CC5EFF /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		C648D4E42527E53700532DE0 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
-		C6647BE8251D9F62004360EF /* CodePathProjectOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodePathProjectOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6647BE8251D9F62004360EF /* FLIX - MOVIE APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FLIX - MOVIE APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6647BEB251D9F62004360EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6647BED251D9F62004360EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C6647BEF251D9F62004360EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,12 +63,14 @@
 		C6647BF4251D9F72004360EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6647BF7251D9F72004360EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6647BF9251D9F72004360EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6647BFE251D9F72004360EF /* CodePathProjectOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodePathProjectOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6647BFE251D9F72004360EF /* FLIX - MOVIE APPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FLIX - MOVIE APPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6647C02251D9F72004360EF /* CodePathProjectOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePathProjectOneTests.swift; sourceTree = "<group>"; };
 		C6647C04251D9F72004360EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6647C09251D9F72004360EF /* CodePathProjectOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodePathProjectOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6647C09251D9F72004360EF /* FLIX - MOVIE APPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FLIX - MOVIE APPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6647C0D251D9F72004360EF /* CodePathProjectOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePathProjectOneUITests.swift; sourceTree = "<group>"; };
 		C6647C0F251D9F73004360EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C67FF890252DB0D4000F9915 /* MovieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridViewController.swift; sourceTree = "<group>"; };
+		C6C8CB3F252E477E009A611B /* SuperHerosDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHerosDetailsViewController.swift; sourceTree = "<group>"; };
 		C6F715AA251EAD4500DBD6FA /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		D75FC6D905C0A996C9A59F68 /* Pods-CodePathProjectOneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodePathProjectOneTests.release.xcconfig"; path = "Target Support Files/Pods-CodePathProjectOneTests/Pods-CodePathProjectOneTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,9 +141,9 @@
 		C6647BE9251D9F62004360EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C6647BE8251D9F62004360EF /* CodePathProjectOne.app */,
-				C6647BFE251D9F72004360EF /* CodePathProjectOneTests.xctest */,
-				C6647C09251D9F72004360EF /* CodePathProjectOneUITests.xctest */,
+				C6647BE8251D9F62004360EF /* FLIX - MOVIE APP.app */,
+				C6647BFE251D9F72004360EF /* FLIX - MOVIE APPTests.xctest */,
+				C6647C09251D9F72004360EF /* FLIX - MOVIE APPUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,12 +155,15 @@
 				C6647BED251D9F62004360EF /* SceneDelegate.swift */,
 				C6647BEF251D9F62004360EF /* ViewController.swift */,
 				C6647BF1251D9F62004360EF /* Main.storyboard */,
+				C67FF890252DB0D4000F9915 /* MovieGridViewController.swift */,
+				C61F7EEF252E37060092E71E /* MovieGridCell.swift */,
 				C6F715AA251EAD4500DBD6FA /* MovieCell.swift */,
 				C6647BF4251D9F72004360EF /* Assets.xcassets */,
 				C6647BF6251D9F72004360EF /* LaunchScreen.storyboard */,
 				C6647BF9251D9F72004360EF /* Info.plist */,
 				C6204639251E85FD00CC5EFF /* MovieViewController.swift */,
 				C648D4E42527E53700532DE0 /* MovieDetailsViewController.swift */,
+				C6C8CB3F252E477E009A611B /* SuperHerosDetailsViewController.swift */,
 			);
 			path = CodePathProjectOne;
 			sourceTree = "<group>";
@@ -180,9 +189,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C6647BE7251D9F62004360EF /* CodePathProjectOne */ = {
+		C6647BE7251D9F62004360EF /* FLIX - MOVIE APP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C6647C12251D9F73004360EF /* Build configuration list for PBXNativeTarget "CodePathProjectOne" */;
+			buildConfigurationList = C6647C12251D9F73004360EF /* Build configuration list for PBXNativeTarget "FLIX - MOVIE APP" */;
 			buildPhases = (
 				549B311F26F925597AD4DBCA /* [CP] Check Pods Manifest.lock */,
 				C6647BE4251D9F62004360EF /* Sources */,
@@ -194,14 +203,14 @@
 			);
 			dependencies = (
 			);
-			name = CodePathProjectOne;
+			name = "FLIX - MOVIE APP";
 			productName = CodePathProjectOne;
-			productReference = C6647BE8251D9F62004360EF /* CodePathProjectOne.app */;
+			productReference = C6647BE8251D9F62004360EF /* FLIX - MOVIE APP.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C6647BFD251D9F72004360EF /* CodePathProjectOneTests */ = {
+		C6647BFD251D9F72004360EF /* FLIX - MOVIE APPTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C6647C15251D9F73004360EF /* Build configuration list for PBXNativeTarget "CodePathProjectOneTests" */;
+			buildConfigurationList = C6647C15251D9F73004360EF /* Build configuration list for PBXNativeTarget "FLIX - MOVIE APPTests" */;
 			buildPhases = (
 				86DF81861237DB375E885A98 /* [CP] Check Pods Manifest.lock */,
 				C6647BFA251D9F72004360EF /* Sources */,
@@ -213,14 +222,14 @@
 			dependencies = (
 				C6647C00251D9F72004360EF /* PBXTargetDependency */,
 			);
-			name = CodePathProjectOneTests;
+			name = "FLIX - MOVIE APPTests";
 			productName = CodePathProjectOneTests;
-			productReference = C6647BFE251D9F72004360EF /* CodePathProjectOneTests.xctest */;
+			productReference = C6647BFE251D9F72004360EF /* FLIX - MOVIE APPTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C6647C08251D9F72004360EF /* CodePathProjectOneUITests */ = {
+		C6647C08251D9F72004360EF /* FLIX - MOVIE APPUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C6647C18251D9F73004360EF /* Build configuration list for PBXNativeTarget "CodePathProjectOneUITests" */;
+			buildConfigurationList = C6647C18251D9F73004360EF /* Build configuration list for PBXNativeTarget "FLIX - MOVIE APPUITests" */;
 			buildPhases = (
 				9528CBF02BDEB83AAB6EC750 /* [CP] Check Pods Manifest.lock */,
 				C6647C05251D9F72004360EF /* Sources */,
@@ -233,9 +242,9 @@
 			dependencies = (
 				C6647C0B251D9F72004360EF /* PBXTargetDependency */,
 			);
-			name = CodePathProjectOneUITests;
+			name = "FLIX - MOVIE APPUITests";
 			productName = CodePathProjectOneUITests;
-			productReference = C6647C09251D9F72004360EF /* CodePathProjectOneUITests.xctest */;
+			productReference = C6647C09251D9F72004360EF /* FLIX - MOVIE APPUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -260,7 +269,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C6647BE3251D9F61004360EF /* Build configuration list for PBXProject "CodePathProjectOne" */;
+			buildConfigurationList = C6647BE3251D9F61004360EF /* Build configuration list for PBXProject "FLIX - MOVIE APP" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -273,9 +282,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C6647BE7251D9F62004360EF /* CodePathProjectOne */,
-				C6647BFD251D9F72004360EF /* CodePathProjectOneTests */,
-				C6647C08251D9F72004360EF /* CodePathProjectOneUITests */,
+				C6647BE7251D9F62004360EF /* FLIX - MOVIE APP */,
+				C6647BFD251D9F72004360EF /* FLIX - MOVIE APPTests */,
+				C6647C08251D9F72004360EF /* FLIX - MOVIE APPUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -415,9 +424,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C8CB40252E477E009A611B /* SuperHerosDetailsViewController.swift in Sources */,
 				C6647BF0251D9F62004360EF /* ViewController.swift in Sources */,
 				C6647BEC251D9F62004360EF /* AppDelegate.swift in Sources */,
 				C648D4E52527E53700532DE0 /* MovieDetailsViewController.swift in Sources */,
+				C67FF891252DB0D4000F9915 /* MovieGridViewController.swift in Sources */,
+				C61F7EF0252E37060092E71E /* MovieGridCell.swift in Sources */,
 				C6647BEE251D9F62004360EF /* SceneDelegate.swift in Sources */,
 				C6F715AB251EAD4500DBD6FA /* MovieCell.swift in Sources */,
 				C620463A251E85FD00CC5EFF /* MovieViewController.swift in Sources */,
@@ -445,12 +457,12 @@
 /* Begin PBXTargetDependency section */
 		C6647C00251D9F72004360EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C6647BE7251D9F62004360EF /* CodePathProjectOne */;
+			target = C6647BE7251D9F62004360EF /* FLIX - MOVIE APP */;
 			targetProxy = C6647BFF251D9F72004360EF /* PBXContainerItemProxy */;
 		};
 		C6647C0B251D9F72004360EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C6647BE7251D9F62004360EF /* CodePathProjectOne */;
+			target = C6647BE7251D9F62004360EF /* FLIX - MOVIE APP */;
 			targetProxy = C6647C0A251D9F72004360EF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -650,7 +662,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodePathProjectOne.app/CodePathProjectOne";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLIX - MOVIE APP.app/FLIX - MOVIE APP";
 			};
 			name = Debug;
 		};
@@ -673,7 +685,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodePathProjectOne.app/CodePathProjectOne";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLIX - MOVIE APP.app/FLIX - MOVIE APP";
 			};
 			name = Release;
 		};
@@ -722,7 +734,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C6647BE3251D9F61004360EF /* Build configuration list for PBXProject "CodePathProjectOne" */ = {
+		C6647BE3251D9F61004360EF /* Build configuration list for PBXProject "FLIX - MOVIE APP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C6647C10251D9F73004360EF /* Debug */,
@@ -731,7 +743,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C6647C12251D9F73004360EF /* Build configuration list for PBXNativeTarget "CodePathProjectOne" */ = {
+		C6647C12251D9F73004360EF /* Build configuration list for PBXNativeTarget "FLIX - MOVIE APP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C6647C13251D9F73004360EF /* Debug */,
@@ -740,7 +752,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C6647C15251D9F73004360EF /* Build configuration list for PBXNativeTarget "CodePathProjectOneTests" */ = {
+		C6647C15251D9F73004360EF /* Build configuration list for PBXNativeTarget "FLIX - MOVIE APPTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C6647C16251D9F73004360EF /* Debug */,
@@ -749,7 +761,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C6647C18251D9F73004360EF /* Build configuration list for PBXNativeTarget "CodePathProjectOneUITests" */ = {
+		C6647C18251D9F73004360EF /* Build configuration list for PBXNativeTarget "FLIX - MOVIE APPUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C6647C19251D9F73004360EF /* Debug */,

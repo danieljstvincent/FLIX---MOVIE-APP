@@ -15,8 +15,8 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     @IBOutlet weak var tableView: UITableView!
     
-    var movies = [[String:Any]]() //This is a Dictionary
-
+      //This is a Dictionary
+    var movies=[[ String: Any ]]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -66,9 +66,9 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.synopsisLabel.text = synopis
         
         let baseUrl = "https://image.tmdb.org/t/p/w185"
-        let posterPath = movie [ "poster_path" ] as! String
-        let posterUrl = URL ( string: baseUrl + posterPath)
-        
+        let posterPath = movie["poster_path"] as! String
+        let posterUrl = URL(string: baseUrl + posterPath)
+                
         cell.posterView.af_setImage(withURL: posterUrl!)
         
         return cell
@@ -90,7 +90,7 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         let movie = movies[indexPath.row]
         
-        let detailsViewController = segue.description as! MovieDetailsViewController
+        let detailsViewController = segue.destination as! MovieDetailsViewController
         detailsViewController.movie = movie
     //Pass the selectd movie to the details view controller
         tableView.deselectRow(at: indexPath, animated: true)
